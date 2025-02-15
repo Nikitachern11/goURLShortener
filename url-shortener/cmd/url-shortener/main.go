@@ -1,7 +1,15 @@
 package main
 
+import (
+	"fmt"
+	"goUrlShortener/url-shortener/config/internal/config"
+)
+
 func main() {
-	// TODO: init config: cleanenv
+
+	cfg := config.MustLoad()
+
+	fmt.Println(cfg)
 
 	// TODO: init logger: slog
 
